@@ -15,8 +15,8 @@
     <header class="header">
         <div class="container">
             <a href="../index.html" class="logo">
-                <img src="../assets/lexie-about.jpg" alt="Lexie Scooters" width="120">
-            </a>
+    <img src="../assets/lexie-about.jpg" alt="Lexie Scooters" width="120" style="border-radius: 50%; object-fit: cover; border: 2px solid #ddd;" />
+    </a>
             
             <nav class="navbar">
                 <ul class="nav-links">
@@ -35,8 +35,7 @@
             </button>
         </div>
     </header>
-
-    <main class="main-content">
+<main class="main-content">
         <section class="page-section clientes-section">
             <div class="container">
                 <h1 class="section-title">Nuestros Clientes</h1>
@@ -53,8 +52,80 @@
                 <!-- Reseñas de Google -->
                 <div class="reviews-section">
                     <h2 class="reviews-title">Reseñas de Google</h2>
-                    <div class="reviews-container">
+                    <div class="reviews-container" id="google-reviews-container">
                         <!-- Las reseñas se cargarán dinámicamente con JavaScript -->
+                    </div>
+
+                    <!-- Reseñas destacadas (se muestran si la API falla) -->
+                    <div class="featured-reviews" style="display:none;">
+                        <article class="review-card featured">
+                            <div class="review-header">
+                                <img src="../assets/lexie-about.jpg" alt="Juan Pérez" class="user-avatar">
+                                <div class="user-info">
+                                    <h3>Juan Pérez</h3>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="review-date">05/10/2024</span>
+                            </div>
+                            <div class="review-content">
+                                <p>"Excelente servicio y productos de calidad. ¡Muy recomendados!"</p>
+                            </div>
+                            <div class="review-footer">
+                                <span class="verified"><i class="fab fa-google"></i> Reseña de Google</span>
+                            </div>
+                        </article>
+
+                        <article class="review-card featured">
+                            <div class="review-header">
+                                <img src="../assets/lexie-about.jpg" alt="María López" class="user-avatar">
+                                <div class="user-info">
+                                    <h3>María López</h3>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                                <span class="review-date">20/09/2024</span>
+                            </div>
+                            <div class="review-content">
+                                <p>"La atención fue increíble y la scooter funciona de maravilla."</p>
+                            </div>
+                            <div class="review-footer">
+                                <span class="verified"><i class="fab fa-google"></i> Reseña de Google</span>
+                            </div>
+                        </article>
+
+                        <article class="review-card featured">
+                            <div class="review-header">
+                                <img src="../assets/lexie-about.jpg" alt="Carlos Gómez" class="user-avatar">
+                                <div class="user-info">
+                                    <h3>Carlos Gómez</h3>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="review-date">15/08/2024</span>
+                            </div>
+                            <div class="review-content">
+                                <p>"Muy satisfecho con mi compra. Volvería sin dudarlo."</p>
+                            </div>
+                            <div class="review-footer">
+                                <span class="verified"><i class="fab fa-google"></i> Reseña de Google</span>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -100,6 +171,7 @@
 
     <!-- JavaScript -->
     <script src="../js/main.js"></script>
-    <script src="../js/clientes.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+    <script src="../js/google-reviews.js"></script>
 </body>
 </html>

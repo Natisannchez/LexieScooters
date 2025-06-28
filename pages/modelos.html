@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexie Scooters - [Nombre de Página]</title>
+    <meta name="description" content="[Descripción específica de la página]">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/lexie-about.jpg" alt="Lexie Scooters" width="120">
+            </a>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/modelos.html">Modelos</a></li>
+                    <li><a href="../pages/clientes.html">Clientes</a></li>
+                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <button class="hamburger" aria-label="Menú móvil">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="models-section">
+            <div class="container">
+                <h1>Nuestros Modelos</h1>
+                
+                <!-- Filtros por categoría -->
+                <div class="model-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="scooters">Motos</button>
+                    <button class="filter-btn" data-filter="electric">Eléctricas</button>
+                    <button class="filter-btn" data-filter="accessories">Accesorios</button>
+                </div>
+                
+                <!-- Grid de productos -->
+                <div class="models-grid">
+                    <!-- Titan 250cc -->
+                    <div class="model-card" data-category="scooters">
+                        <div class="model-image-slider">
+                            <img src="../assets/motos/titan1.jpg" alt="Titan 250CC" class="active">
+                            <img src="../assets/motos/titan2.jpg" alt="Titan 250CC" class="active">
+                            <img src="../assets/motos/titan3.jpg" alt="Titan 250CC" class="active">
+                            <img src="../assets/motos/titan4.jpg" alt="Titan 250CC" class="active">
+                            <div class="slider-controls">
+                                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>Titan 250CC</h3>
+                            <p class="model-specs">Scooter | 250CC</p>
+                            <p class="model-price">$2,500.00</p>
+                            <div class="model-actions">
+                                <button class="btn-view">VER PRODUCTO</button>
+                                <button class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contactar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- GTX 250cc -->
+                    <div class="model-card" data-category="scooters">
+                        <div class="model-image-slider">
+                            <img src="../assets/motos/gtx1.jpg" alt="GTX 250CC" class="active">
+                            <img src="../assets/motos/gtx2.jpg" alt="GTX 250CC">
+                            <img src="../assets/motos/gtx3.jpg" alt="GTX 250CC">
+                            <img src="../assets/motos/gtx4.jpg" alt="GTX 250CC">
+                            <div class="slider-controls">
+                                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>GTX 250CC</h3>
+                            <p class="model-specs">Scooter | 250CC</p>
+                            <p class="model-price">$2,500.00</p>
+                            <div class="model-actions">
+                                <button class="btn-view">VER PRODUCTO</button>
+                                <button class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contactar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- XMT 250cc -->
+                    <div class="model-card" data-category="scooters">
+                        <div class="model-image-slider">
+                            <img src="../assets/motos/xmt1.jpg" alt="XMT 250CC" class="active">
+                            <img src="../assets/motos/xmt2.jpg" alt="XMT 250CC">
+                            <img src="../assets/motos/xmt3.jpg" alt="XMT 250CC">
+                            <img src="../assets/motos/xmt4.jpg" alt="XMT 250CC">
+                            <div class="slider-controls">
+                                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>XMT 250CC</h3>
+                            <p class="model-specs">Scooter | 250CC</p>
+                            <p class="model-price">$2,500.00</p>
+                            <div class="model-actions">
+                                <button class="btn-view">VER PRODUCTO</button>
+                                <button class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contactar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vitacci FALCON 200cc -->
+                    <div class="model-card" data-category="scooters">
+                        <div class="model-image-slider">
+                            <img src="../assets/motos/vitacci1.jpg" alt="Vitacci FALCON 200CC" class="active">
+                            <img src="../assets/motos/vitacci2.jpg" alt="Vitacci FALCON 200CC">
+                            <img src="../assets/motos/vitacci3.jpg" alt="Vitacci FALCON 200CC">
+                            <img src="../assets/motos/vitacci4.jpg" alt="Vitacci FALCON 200CC">
+                            <div class="slider-controls">
+                                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>Vitacci FALCON 200CC</h3>
+                            <p class="model-specs">Scooter | 200CC</p>
+                            <p class="model-price">$2,500.00</p>
+                            <div class="model-actions">
+                                <button class="btn-view">VER PRODUCTO</button>
+                                <button class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contactar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vitacci Raven 250cc -->
+                    <div class="model-card" data-category="scooters">
+                        <div class="model-image-slider">
+                            <img src="../assets/motos/vitacciR1.jpg" alt="Vitacci Raven 250CC" class="active">
+                            <img src="../assets/motos/vitacciR2.jpg" alt="Vitacci Raven 250CC">
+                            <img src="../assets/motos/vitacciR3.jpg" alt="Vitacci Raven 250CC">
+                            <img src="../assets/motos/vitacciR4.jpg" alt="Vitacci Raven 250CC">
+                            <div class="slider-controls">
+                                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>Vitacci Raven 250CC</h3>
+                            <p class="model-specs">Scooter | 250CC</p>
+                            <p class="model-price">$2,500.00</p>
+                            <div class="model-actions">
+                                <button class="btn-view">VER PRODUCTO</button>
+                                <button class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contactar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vitacci Eagle 200cc -->
+                    <div class="model-card" data-category="scooters">
+                        <div class="model-image-slider">
+                            <img src="../assets/motos/vitacciE1jpg.jpg" alt="Vitacci Eagle 200CC" class="active">
+                            <img src="../assets/motos/vitacciE2.jpg" alt="Vitacci Eagle 200CC">
+                            <img src="../assets/motos/vitacciE3.jpg" alt="Vitacci Eagle 200CC">
+                            <img src="../assets/motos/vitacciE4.jpg" alt="Vitacci Eagle 200CC">
+                            <div class="slider-controls">
+                                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>Vitacci Eagle 200CC</h3>
+                            <p class="model-specs">Scooter | 200CC</p>
+                            <p class="model-price">$2,500.00</p>
+                            <div class="model-actions">
+                                <button class="btn-view">VER PRODUCTO</button>
+                                <button class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contactar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ice Bear Warrior 200cc -->
+                    <div class="model-card" data-category="scooters">
+                        <div class="model-image-slider">
+                            <img src="../assets/motos/icebear1.jpg" alt="Ice Bear Warrior 200CC" class="active">
+                            <img src="../assets/motos/icebear2.jpg" alt="Ice Bear Warrior 200CC">
+                            <img src="../assets/motos/icebear3jpg.jpg" alt="Ice Bear Warrior 200CC">
+                            <img src="../assets/motos/icebear4.jpg" alt="Ice Bear Warrior 200CC">
+                            <div class="slider-controls">
+                                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>Ice Bear Warrior 200CC</h3>
+                            <p class="model-specs">Marca: Ice Bear | 200CC</p>
+                            <p class="model-price">$2,500.00</p>
+                            <div class="model-actions">
+                                <button class="btn-view">VER PRODUCTO</button>
+                                <button class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contactar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Amigo Jax Sport 200cc -->
+                    <div class="model-card" data-category="scooters">
+                        <div class="model-image-slider">
+                            <img src="../assets/motos/amigoJax1.jpg" alt="Amigo Jax Sport 200CC" class="active">
+                            <img src="../assets/motos/amigoJax2.jpg" alt="Amigo Jax Sport 200CC">
+                            <img src="../assets/motos/amigoJax3.jpg" alt="Amigo Jax Sport 200CC">
+                            <img src="../assets/motos/amigoJax4.jpg" alt="Amigo Jax Sport 200CC">
+                            <div class="slider-controls">
+                                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>Amigo Jax Sport 200CC</h3>
+                            <p class="model-specs">Marca: Amigo | 200CC</p>
+                            <p class="model-price">$2,500.00</p>
+                            <p class="model-colors">Colores: blanco, negro, rojo, gris, verde, azul</p>
+                            <div class="model-actions">
+                                <button class="btn-view">VER PRODUCTO</button>
+                                <button class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contactar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Amigo SS-50cc -->
+                    <div class="model-card" data-category="scooters">
+                        <div class="model-image-slider">
+                            <img src="../assets/motos/amigoss1.jpg" alt="Amigo SS-50CC" class="active">
+                            <img src="../assets/motos/amigoss2.jpg" alt="Amigo SS-50CC">
+                            <img src="../assets/motos/amigoss3.jpg" alt="Amigo SS-50CC">
+                            <img src="../assets/motos/amigoss4jpg.jpg" alt="Amigo SS-50CC">
+                            <div class="slider-controls">
+                                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>Amigo SS-50CC</h3>
+                            <p class="model-specs">Marca: Amigo | 50CC</p>
+                            <p class="model-price">$1,200.00</p>
+                            <div class="model-actions">
+                                <button class="btn-view">VER PRODUCTO</button>
+                                <button class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contactar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Attack Revo X Mini Tank 50cc -->
+                    <div class="model-card" data-category="scooters">
+                        <div class="model-image-slider">
+                            <img src="../assets/motos/attack1.jpg" alt="Attack Revo X Mini Tank 50CC" class="active">
+                            <img src="../assets/motos/attack2.jpg" alt="Attack Revo X Mini Tank 50CC">
+                            <img src="../assets/motos/attack3.jpg" alt="Attack Revo X Mini Tank 50CC">
+                            <img src="../assets/motos/attack4.jpg" alt="Attack Revo X Mini Tank 50CC">
+                            <div class="slider-controls">
+                                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>Attack Revo X Mini Tank 50CC</h3>
+                            <p class="model-specs">Marca: Attack | 50CC</p>
+                            <p class="model-price">$1,200.00</p>
+                            <div class="model-actions">
+                                <button class="btn-view">VER PRODUCTO</button>
+                                <button class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contactar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ice Bear Ravida 150cc -->
+                    <div class="model-card" data-category="scooters">
+                        <div class="model-image-slider">
+                            <img src="../assets/motos/icebearR1.jpg" alt="Ice Bear Ravida 150CC" class="active">
+                            <img src="../assets/motos/icebearR2.jpg" alt="Ice Bear Ravida 150CC">
+                            <img src="../assets/motos/icebearR3.jpg" alt="Ice Bear Ravida 150CC">
+                            <img src="../assets/motos/icebearR4.jpg" alt="Ice Bear Ravida 150CC">
+                            <div class="slider-controls">
+                                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>Ice Bear Ravida 150CC</h3>
+                            <p class="model-specs">Marca: Ice Bear | 150CC</p>
+                            <p class="model-price">$1,800.00</p>
+                            <div class="model-actions">
+                                <button class="btn-view">VER PRODUCTO</button>
+                                <button class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contactar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- SPI GT1 150cc -->
+                    <div class="model-card" data-category="scooters">
+                        <div class="model-image-slider">
+                            <img src="../assets/motos/gt1spi1.jpg" alt="SPI GT1 150CC" class="active">
+                            <img src="../assets/motos/gt1spi2.jpg" alt="SPI GT1 150CC">
+                            
+                            <div class="slider-controls">
+                                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>SPI GT1 150CC</h3>
+                            <p class="model-specs">Marca: SPI | 150CC</p>
+                            <p class="model-price">$1,800.00</p>
+                            <div class="model-actions">
+                                <button class="btn-view">VER PRODUCTO</button>
+                                <button class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contactar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- SPI FLASH 50cc -->
+                    <div class="model-card" data-category="scooters">
+                        <div class="model-image-slider">
+                            <img src="../assets/motos/spi1.jpg" alt="SPI FLASH 50CC" class="active">
+                            <img src="../assets/motos/spi2.jpg" alt="SPI FLASH 50CC">
+                            <img src="../assets/motos/spi3.jpg" alt="SPI FLASH 50CC">
+                            <img src="../assets/motos/spi4.jpg" alt="SPI FLASH 50CC">
+                            <div class="slider-controls">
+                                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="model-info">
+                            <h3>SPI FLASH 50CC</h3>
+                            <p class="model-specs">Marca: SPI | 50CC</p>
+                            <p class="model-price">$1,200.00</p>
+                            <div class="model-actions">
+                                <button class="btn-view">VER PRODUCTO</button>
+                                <button class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Contactar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modal para vista ampliada -->
+                <div class="modal-overlay">
+                    <div class="modal-content">
+                        <button class="modal-close">&times;</button>
+                        <div class="modal-slider">
+                            <img src="" alt="" class="modal-main-image">
+                            <div class="modal-thumbnails"></div>
+                        </div>
+                        <div class="modal-info"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Contacto -->
+                <div class="footer-column">
+                    <h3 class="footer-title">CONTACTO</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Miami, FL</li>
+                        <li><i class="fas fa-phone"></i> +1 (786) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@lexiescooters.com</li>
+                    </ul>
+                </div>
+                
+                <!-- Redes Sociales -->
+                <div class="footer-column">
+                    <h3 class="footer-title">REDES SOCIALES</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/17861234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Horario -->
+                <div class="footer-column">
+                    <h3 class="footer-title">HORARIO</h3>
+                    <p>Lunes a Domingo</p>
+                    <p>10:00 AM - 6:30 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lexie Scooters. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/models.js"></script>
+    
+</body>
+</html>

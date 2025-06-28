@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexie Scooters - Contacto</title>
+    <meta name="description" content="Contáctanos para compra, renta o información sobre nuestros scooters y motocicletas. Envíos a Cuba disponibles.">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.svg" alt="Lexie Scooters" width="120">
+            </a>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="modelos.html">Modelos</a></li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <button class="hamburger" aria-label="Menú móvil">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Contáctanos</h1>
+                <p>Estamos aquí para responder todas tus preguntas sobre scooters, motocicletas y envíos a Cuba</p>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Formulario de Contacto -->
+                    <div class="contact-form">
+                        <h2>Envíanos un mensaje</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nombre completo*</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Correo electrónico*</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Asunto*</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Selecciona una opción</option>
+                                    <option value="venta">Consulta sobre compra</option>
+                                    <option value="renta">Consulta sobre renta</option>
+                                    <option value="envio">Consulta sobre envíos a Cuba</option>
+                                    <option value="soporte">Soporte técnico</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensaje*</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                    
+                    <!-- Información de Contacto -->
+                    <div class="contact-info">
+                        <h2>Información de contacto</h2>
+                        
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Dirección</h3>
+                                <p>1234 Calle Principal, Miami, FL 33132</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>Teléfonos</h3>
+                                <p>+1 (786) 123-4567</p>
+                                <p>+1 (786) 765-4321</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Correo electrónico</h3>
+                                <p>ventas@lexiescooters.com</p>
+                                <p>soporte@lexiescooters.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Horario de atención</h3>
+                                <p>Lunes a Domingo: 9:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-media">
+                            <h3>Síguenos</h3>
+                            <div class="social-icons">
+                                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mapa -->
+        <section class="map-section">
+            <div class="container">
+                <h2>Nuestra ubicación</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53925916665!2d-80.29949920266738!3d25.782390733064336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1620000000000!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA -->
+        <section class="contact-cta">
+            <div class="container">
+                <h2>¿Listo para adquirir tu scooter o motocicleta?</h2>
+                <p>Contáctanos ahora mismo para recibir asesoría personalizada</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/17861234567" target="_blank" class="cta-btn whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Contacto -->
+                <div class="footer-column">
+                    <h3 class="footer-title">CONTACTO</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Miami, FL</li>
+                        <li><i class="fas fa-phone"></i> +1 (786) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@lexiescooters.com</li>
+                    </ul>
+                </div>
+                
+                <!-- Redes Sociales -->
+                <div class="footer-column">
+                    <h3 class="footer-title">REDES SOCIALES</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/17861234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Horario -->
+                <div class="footer-column">
+                    <h3 class="footer-title">HORARIO</h3>
+                    <p>Lunes a Domingo</p>
+                    <p>10:00 AM - 6:30 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lexie Scooters. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

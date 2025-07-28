@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexie Scooters - Financing</title>
+    <meta name="description" content="Financing options for scooter and motorcycle purchases. No credit needed, flexible payment plans.">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/financiera.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/lexie-about.jpg" alt="Lexie Scooters" width="120" style="border-radius: 50%; object-fit: cover; border: 2px solid #ddd;" />
+            </a>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="../pages/modelos.html"><i class="fas fa-motorcycle"></i> Models</a></li>
+                    <li><a href="../pages/clientes.html"><i class="fas fa-users"></i> Clients</a></li>
+                    <li><a href="../pages/nosotros.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="../pages/contacto.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="../pages/financiera.html" class="active"><i class="fas fa-dollar-sign"></i> Financing</a></li>
+                </ul>
+            </nav>
+            
+            <button class="hamburger" aria-label="Mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-financing">
+        <section class="financing-hero">
+            <div class="container">
+                <h1 class="hero-title">GET TO KNOW OUR FINANCING<br><span>OPTIONS</span></h1>
+                <p class="hero-subtitle">
+                    NO CREDIT? NO PROBLEM! We offer no-credit-needed financing options<br>
+                    with flexible payment plans.
+                </p>
+            </div>
+        </section>
+    
+        <section class="partners-section">
+    <div class="container">
+        <h2 class="partners-title">FINANCING PARTNERS</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <a href="https://progleasing.com" target="_blank">
+                        <img src="../assets/f1.jpg" alt="Progressive Leasing">
+                        <span>Progressive Leasing</span>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://americanfirstfinance.com" target="_blank">
+                        <img src="../assets/f2.jpg" alt="American First Finance">
+                        <span>American First Finance</span>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.synchrony.com" target="_blank">
+                        <img src="../assets/f3.jpg" alt="Synchrony">
+                        <span>Synchrony</span>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://progleasing.com" target="_blank">
+                        <img src="../assets/f1.jpg" alt="Progressive Leasing">
+                        <span>Progressive Leasing</span>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://americanfirstfinance.com" target="_blank">
+                        <img src="../assets/f2.jpg" alt="American First Finance">
+                        <span>American First Finance*</span>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.synchrony.com" target="_blank">
+                        <img src="../assets/f3.jpg" alt="Synchrony">
+                        <span>Synchrony</span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="eligibility-section">
+    <div class="container">
+        <div class="eligibility-grid">
+        <div class="eligibility-box">
+            <h3>ELECTRIC PRODUCTS</h3>
+            <p>Financing available through Progressive Leasing</p>
+        </div>
+        <div class="eligibility-box">
+            <h3>GAS-POWERED PRODUCTS</h3>
+            <p>Financing available through American First Finance and Synchrony Bank</p>
+        </div>
+        </div>
+
+        <div class="eligibility-cta">
+        <button class="apply-btn" onclick="toggleForm()">APPLY NOW AND FIND THE BEST OPTION FOR YOU!</button>
+
+        <form class="apply-form" id="applyForm">
+            <div class="form-group">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        </div>
+    </div>
+</section>
+
+
+       
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Contact -->
+                <div class="footer-column">
+                    <h3 class="footer-title">CONTACT</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Miami, FL</li>
+                        <li><i class="fas fa-phone"></i> +1 (786) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@lexiescooters.com</li>
+                    </ul>
+                </div>
+                
+                <!-- Social Media -->
+                <div class="footer-column">
+                    <h3 class="footer-title">SOCIAL MEDIA</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/17861234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Schedule -->
+                <div class="footer-column">
+                    <h3 class="footer-title">SCHEDULE</h3>
+                    <p>Monday to Sunday</p>
+                    <p>10:00 AM - 6:30 PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lexie Scooters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="../js/financiera.js"></script>
+</body>
+</html>

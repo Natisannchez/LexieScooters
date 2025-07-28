@@ -1,0 +1,369 @@
+/* RESET Y ESTILOS BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER FIXED */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* MAIN CONTENT */
+.main-financing {
+    margin-top: 80px;
+    flex: 1;
+    width: 100%;
+}
+
+/* HERO SECTION */
+.financing-hero {
+    padding: 5rem 0 3rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:  #007bff;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    padding: 0 20px;
+}
+
+/* PARTNERS SECTION */
+.partners-section {
+    padding: 2rem 0 4rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.partners-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* CARRUSEL (VERSIÓN FUNCIONAL) */
+/* PARTNERS SECTION */
+.partners-section {
+    padding: 3rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.partners-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* CAROUSEL STYLES */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    will-change: transform; /* Optimización para animación */
+}
+
+.carousel-item {
+    flex: 0 0 200px;
+    margin: 0 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.carousel-item img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto 10px;
+    display: block;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.05);
+}
+
+.carousel-item span {
+    display: block;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-top: 8px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+/* SECTION 3 – ELIGIBILITY + FORM */
+.eligibility-section {
+    background-color: #f8f9fa;
+    padding: 3rem 0 4rem;
+    text-align: center;
+}
+
+.eligibility-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.eligibility-box {
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    max-width: 350px;
+    flex: 1 1 300px;
+}
+
+.eligibility-box h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0.8rem;
+}
+
+.eligibility-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.eligibility-cta {
+    margin-top: 2rem;
+}
+
+.apply-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3;
+}
+
+.apply-form {
+    margin-top: 2rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.apply-form .form-group {
+    width: 100%;
+    max-width: 400px;
+}
+
+.apply-form input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+.apply-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit-btn {
+    margin-top: 1rem;
+    background-color: #282aa7;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #232188;
+}
+
+/* FOOTER */
+.site-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 3rem 0 1.5rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.15rem;
+    }
+    
+    .carousel-item {
+        flex: 0 0 180px;
+    }
+    
+    .carousel-item img {
+        width: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-financing {
+        margin-top: 70px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .partners-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .carousel-item {
+        flex: 0 0 160px;
+        margin: 0 10px;
+    }
+    
+    .carousel-item img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .partners-title {
+        font-size: 1.3rem;
+    }
+    
+    .carousel-item {
+        flex: 0 0 140px;
+    }
+    
+    .carousel-item img {
+        width: 100px;
+    }
+    
+    .carousel-item span {
+        font-size: 0.85rem;
+    }
+}

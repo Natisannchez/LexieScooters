@@ -28,11 +28,16 @@
     </a>
       <nav class="navbar">
         <ul class="nav-links">
-          <li><a href="index.html" class="active"><i class="fas fa-home"></i> Inicio</a></li>
-          <li><a href="pages/modelos.html"><i class="fas fa-motorcycle"></i> Modelos</a></li>
-          <li><a href="pages/clientes.html"><i class="fas fa-users"></i> Clientes</a></li>
-          <li><a href="pages/sobre-nosotros.html"><i class="fas fa-info-circle"></i> Sobre Nosotros</a></li>
-          <li><a href="pages/contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+          <ul class="nav-links">
+                    <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="./pages/modelos.html"><i class="fas fa-motorcycle"></i> Models</a></li>
+                    <li><a href="./pages/clientes.html"><i class="fas fa-users"></i> Clients</a></li>
+                    <li><a href="./pages/nosotros.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="./pages/contacto.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="./pages/financiera.html" class="active"><i class="fas fa-dollar-sign"></i> Financing</a></li>
+                </ul>
+          
+
         </ul>
       </nav>
       <button class="hamburger" aria-label="Menú móvil">
@@ -46,31 +51,45 @@
   <!-- Contenido principal -->
   <main>
     <!-- Hero -->
-    <section class="seccion1">
-      <div class="seccion1-content">
-        <h1>Lexie Scooters</h1>
-        <p class="seccion1-text">Movilidad urbana sostenible con diseños premium</p>
-        <a href="tel:+34912345678" class="seccion1-phone">
-          <i class="fas fa-phone-alt"></i> +34 912 345 678
-        </a>
-      </div>
-    </section>
+      <section class="seccion1">
+  <video autoplay muted loop class="seccion1-video" id="heroVideo">
+    <source src="./assets/lexie2.mp4" type="video/mp4">
+    Tu navegador no soporta la reproducción de video.
+  </video>
+  <div class="seccion1-content">
+    <h1>Lexie Scooters</h1>
+    <p class="seccion1-subtitle">Style that moves you without limits</p>
+    <a href="https://wa.me/13057496344" class="seccion1-phone" target="_blank" rel="noopener">305-749-6344</a>
 
-    <!-- Carrusel -->
-    <section class="seccion2">
-      <div class="seccion2-carrusel">
-        <div class="carrusel-item active" style="background-image: url('./assets/carrusel1.jpg')"></div>
-        <div class="carrusel-item" style="background-image: url('./assets/carrusel2.jpg')"></div>
-        <div class="carrusel-item" style="background-image: url('./assets/carrusel3.jpg')"></div>
-      </div>
-      <div class="seccion2-content">
-        <div class="seccion2-text">
-          <h2>Lexie Scooters</h2>
-          <p>Innovación y diseño en movilidad eléctrica. Nuestros scooters ofrecen la perfecta combinación de potencia, autonomía y estilo urbano.</p>
-          <a href="pages/contacto.html" class="btn-contacto">Contactar ahora</a>
-        </div>
-      </div>
-    </section>
+  </div>
+</section>
+
+
+  <section class="seccion2">
+  <div class="seccion2-carrusel">
+    <div class="carrusel-item active" style="background-image: url('./assets/carrusel1.jpg')"></div>
+    <div class="carrusel-item" style="background-image: url('./assets/carrusel2.jpg')"></div>
+    <div class="carrusel-item" style="background-image: url('./assets/carrusel3.jpg')"></div>
+  </div>
+
+  <div class="seccion2-content">
+    <div class="seccion2-text">
+      <h2>Who Are We?</h2>
+      <p>
+        At Lexie Scooters, we are dedicated to transforming urban mobility with modern, sustainable, and accessible solutions. We specialize in the sale of scooters and motorcycles that combine technology, design, and performance, perfectly suited to our customers’ real needs.
+      </p>
+
+      <h2>What Do We Offer?</h2>
+      <p>
+        We offer a wide selection of scooters and motorcycles, ideal for those seeking efficiency, style, and savings. We also provide nationwide shipping across the United States and financing options starting from $0 down and up to 24 months with no interest.
+      </p>
+
+      <a href="./pages/contacto.html" class="btn-contacto">Contactar ahora</a>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Selector -->
     <section class="seccion3">

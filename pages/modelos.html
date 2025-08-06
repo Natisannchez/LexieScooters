@@ -7,6 +7,7 @@
     <meta name="description" content="[Descripción específica de la página]">
     <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/modelos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
@@ -21,10 +22,10 @@
                 <ul class="nav-links">
                     <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="../pages/modelos.html"><i class="fas fa-motorcycle"></i> Models</a></li>
-                    <li><a href="../pages/clientes.html"><i class="fas fa-users"></i> Clients</a></li>
+                    <!-- <li><a href="./pages/clientes.html"><i class="fas fa-users"></i> Clients</a></li> -->
                     <li><a href="../pages/nosotros.html"><i class="fas fa-info-circle"></i> About Us</a></li>
                     <li><a href="../pages/contacto.html"><i class="fas fa-envelope"></i> Contact</a></li>
-                    <li><a href="../pages/financiera.html" class="active"><i class="fas fa-dollar-sign"></i> Financing</a></li>
+                    <li><a href="../pages/financiera.html"><i class="fas fa-dollar-sign"></i> Financing</a></li>
                 </ul>
             </nav>
             
@@ -37,17 +38,65 @@
     </header>
 
     <main class="main-content">
+        <!-- Brands We Work With -->
+    <section class="brands-carousel-section">
+    <div class="container">
+        <h2 class="section-title">Brands We Work With</h2>
+        <div class="brands-carousel-wrapper">
+        <div class="brands-carousel-track">
+            <div class="brand-item"><img src="../assets/marcas/marca1.jpg" alt="Brand 1" /></div>
+            <div class="brand-item"><img src="../assets/marcas/marca2.jpg" alt="Brand 2" /></div>
+            <div class="brand-item"><img src="../assets/marcas/marca3.jpg" alt="Brand 3" /></div>
+            <div class="brand-item"><img src="../assets/marcas/marca4.jpg" alt="Brand 4" /></div>
+            <div class="brand-item"><img src="../assets/marcas/marca5.jpg" alt="Brand 5" /></div>
+            <!-- se puede seguir duplicando o agregar más marcas -->
+        </div>
+        </div>
+    </div>
+    </section>
+
         <section class="models-section">
             <div class="container">
-                <h1>Nuestros Modelos</h1>
-                
-                <!-- Filtros por categoría -->
-                <div class="model-filters">
-                    <button class="filter-btn active" data-filter="all">Todos</button>
-                    <button class="filter-btn" data-filter="scooters">Motos</button>
-                    <button class="filter-btn" data-filter="electric">Eléctricas</button>
-                    <button class="filter-btn" data-filter="accessories">Accesorios</button>
-                </div>
+        <h2>Our Models</h2>
+
+        <div class="model-filters">
+
+        <!-- MOTORCYCLES -->
+        <div class="filter-group">
+            <button class="filter-btn main-filter" data-filter="motorcycles">Motorcycles</button>
+            <div class="sub-filters oculto" data-parent="motorcycles">
+            <button class="sub-filter-btn" data-subfilter="50cc">50cc</button>
+            <button class="sub-filter-btn" data-subfilter="150cc">150cc</button>
+            <button class="sub-filter-btn" data-subfilter="200cc">200cc</button>
+            <button class="sub-filter-btn" data-subfilter="250cc">250cc</button>
+            </div>
+        </div>
+
+        <!-- ELECTRIC -->
+        <div class="filter-group">
+            <button class="filter-btn main-filter" data-filter="electric">Electric</button>
+            <div class="sub-filters oculto" data-parent="electric">
+            <button class="sub-filter-btn" data-subfilter="e-bikes">E-Bikes</button>
+            <button class="sub-filter-btn" data-subfilter="e-scooters">E-Scooters</button>
+            <button class="sub-filter-btn" data-subfilter="kids-e-rides">Kids E-Rides</button>
+            </div>
+        </div>
+
+        <!-- ACCESSORIES -->
+        <div class="filter-group">
+            <button class="filter-btn main-filter" data-filter="accessories">Accessories</button>
+            <div class="sub-filters oculto" data-parent="accessories">
+            <button class="sub-filter-btn" data-subfilter="helmet">Helmet</button>
+            <button class="sub-filter-btn" data-subfilter="phone-holder">Phone Holder</button>
+            <button class="sub-filter-btn" data-subfilter="gloves">Gloves</button>
+            <button class="sub-filter-btn" data-subfilter="lock">Lock</button>
+            </div>
+        </div>
+
+        <!-- ALL -->
+        <button class="filter-btn main-filter" data-filter="all">All</button>
+        </div>
+
                 
                 <!-- Grid de productos -->
                 <div class="models-grid">

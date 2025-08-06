@@ -1,26 +1,98 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Filtrado de productos
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const modelCards = document.querySelectorAll('.model-card');
-    
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Actualizar botones activos
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-            
-            const filter = button.dataset.filter;
-            
-            // Filtrar productos
+    document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.brands-carousel-track');
+    if (track) {
+        // Duplicamos las marcas para efecto infinito
+        track.innerHTML += track.innerHTML;
+
+        let scrollAmount = 0;
+        const scrollSpeed = 0.5; // píxeles por frame
+
+        function autoScroll() {
+        scrollAmount += scrollSpeed;
+        if (scrollAmount >= track.scrollWidth / 2) {
+            scrollAmount = 0; // Reinicia scroll
+        }
+        track.scrollLeft = scrollAmount;
+        requestAnimationFrame(autoScroll);
+        }
+
+        autoScroll();
+    }
+    });
+document.addEventListener('DOMContentLoaded', function () {
+  const mainButtons = document.querySelectorAll('.main-filter');
+  const submenus = document.querySelectorAll('.sub-filters');
+  const subButtons = document.querySelectorAll('.sub-filter-btn');
+  const modelCards = document.querySelectorAll('.model-card');
+
+  function resetAll() {
+    submenus.forEach(menu => menu.classList.add('oculto'));
+    subButtons.forEach(btn => btn.classList.remove('active'));
+    mainButtons.forEach(btn => btn.classList.remove('active'));
+  }
+
+  mainButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+      resetAll();
+      btn.classList.add('active');
+
+      if (filter === 'all') {
+        modelCards.forEach(card => card.style.display = 'block');
+      } else {
+        const submenu = document.querySelector(`.sub-filters[data-parent="${filter}"]`);
+        if (submenu) submenu.classList.remove('oculto');
+
+        modelCards.forEach(card => {
+          if (card.dataset.category === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+    });
+  });
+
+  subButtons.forEach(subBtn => {
+    subBtn.addEventListener('click', () => {
+      subButtons.forEach(btn => btn.classList.remove('active'));
+      subBtn.classList.add('active');
+
+      const subfilter = subBtn.dataset.subfilter;
+
+      modelCards.forEach(card => {
+        if (card.dataset.subcategory === subfilter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+
+
+        // Subfiltros
+        const subFilterButtons = document.querySelectorAll('.sub-filter-btn');
+        subFilterButtons.forEach(subButton => {
+            subButton.addEventListener('click', () => {
+            subFilterButtons.forEach(btn => btn.classList.remove('active'));
+            subButton.classList.add('active');
+
+            const subfilter = subButton.dataset.subfilter;
+
             modelCards.forEach(card => {
-                if (filter === 'all' || card.dataset.category === filter) {
-                    card.style.display = 'block';
+                if (card.dataset.subcategory === subfilter) {
+                card.style.display = 'block';
                 } else {
-                    card.style.display = 'none';
+                card.style.display = 'none';
                 }
             });
+            });
         });
-    });
+
+
     
     // Sliders de imágenes en las tarjetas
     document.querySelectorAll('.model-image-slider').forEach(slider => {
@@ -146,4 +218,3 @@ document.addEventListener('DOMContentLoaded', function() {
             window.open(whatsappUrl, '_blank');
         }
     });
-});
